@@ -1,7 +1,7 @@
 /*
  * serve index.html file wihtout any routes
  * first argv = port
- * second argv = index.html file path
+ * second argv = index.html dir path
  */
 
 var express = require('express');
@@ -16,3 +16,4 @@ app.use(express.static(process.argv[3] ||
 
 
 app.listen(process.argv[2]);
+console.log("server started on localhost:"+process.argv[2]);
